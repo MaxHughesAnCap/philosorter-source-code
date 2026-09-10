@@ -33,7 +33,7 @@ function Home() {
   const [path, setPath] = useState<string[]>(["root"]);
   const [result, setResult] = useState<string | null>(null);
 
-  const nodeId = path[path.length - 1];
+  const nodeId = path[path.length - 1] ?? "root";
   const node = quiz[nodeId];
 
   const start = () => {
@@ -65,7 +65,7 @@ function Home() {
   };
 
   const surprise = () => {
-    const name = philosophyNames[Math.floor(Math.random() * philosophyNames.length)];
+    const name = philosophyNames[Math.floor(Math.random() * philosophyNames.length)] ?? "Platonism";
     setResult(name);
     setScreen("result");
   };
