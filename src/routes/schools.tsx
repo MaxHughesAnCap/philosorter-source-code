@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Emblem } from "@/components/Emblem";
-import { philosophies, philosophyNames } from "@/data/philosophies";
+import { getSchool, philosophies, philosophyNames } from "@/data/philosophies";
 
 export const Route = createFileRoute("/schools")({
   head: () => ({
@@ -31,7 +31,7 @@ function Schools() {
     const q = query.trim().toLowerCase();
     if (!q) return philosophyNames;
     return philosophyNames.filter((name) => {
-      const s = philosophies[name];
+      const s = getSchool(name);
       return (
         name.toLowerCase().includes(q) ||
         s.thinker.toLowerCase().includes(q) ||
@@ -59,7 +59,7 @@ function Schools() {
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {shown.map((name) => {
-          const s = philosophies[name];
+          const s = getSchool(name);
           return (
             <article
               key={name}

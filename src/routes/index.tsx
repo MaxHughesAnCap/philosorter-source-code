@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Emblem } from "@/components/Emblem";
-import { philosophies, philosophyNames } from "@/data/philosophies";
+import { getSchool, philosophies, philosophyNames } from "@/data/philosophies";
 import { quiz } from "@/data/quiz";
 
 export const Route = createFileRoute("/")({
@@ -134,7 +134,7 @@ function HomeScreen({ onStart, onSurprise }: { onStart: () => void; onSurprise: 
         <p className="eyebrow">Some of what is waiting at the ends</p>
         <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {preview.map((name) => {
-            const s = philosophies[name];
+            const s = getSchool(name);
             return (
               <div key={name} className="rounded-xl border border-border bg-card p-4">
                 <div className="h-20 w-full overflow-hidden rounded-md border border-border">
@@ -202,7 +202,7 @@ function ResultScreen({
   onRestart: () => void;
   onBack: () => void;
 }) {
-  const s = philosophies[name];
+  const s = getSchool(name);
 
   return (
     <main className="mx-auto w-full max-w-2xl px-5 pb-20 pt-6">

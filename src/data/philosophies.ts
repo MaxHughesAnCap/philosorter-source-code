@@ -533,3 +533,17 @@ export const philosophies: Record<string, School> = {
 };
 
 export const philosophyNames = Object.keys(philosophies).sort((a, b) => a.localeCompare(b));
+
+const fallbackSchool: School = {
+  quote: "The unexamined life is not worth living.",
+  thinker: "Socrates",
+  blurb: "This school could not be found. Try the quiz again.",
+  tradition: "Unknown",
+  colors: ["#2b2b33", "#c9a227", "#e6e0d0"],
+  pattern: "orb",
+};
+
+/** Safe lookup: never returns undefined. */
+export function getSchool(name: string): School {
+  return philosophies[name] ?? fallbackSchool;
+}
