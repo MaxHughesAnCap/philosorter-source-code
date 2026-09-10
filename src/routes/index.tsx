@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Emblem } from "@/components/Emblem";
-import { getSchool, philosophies, philosophyNames } from "@/data/philosophies";
+import { getSchool, philosophyNames } from "@/data/philosophies";
 import { quiz } from "@/data/quiz";
 
 export const Route = createFileRoute("/")({
