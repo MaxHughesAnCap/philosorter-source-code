@@ -747,7 +747,7 @@ export const philosophies: Record<string, School> = {
     blurb:
       "Art is made inside material conditions and carries their politics. Criticism exposes what a work does socially, and demands that it do better.",
     tradition: "Aesthetics",
-    colors: ["#6b1a1a", "#e6d8b8", "#2b2b2b",],
+    colors: ["#6b1a1a", "#e6d8b8", "#2b2b2b"],
     pattern: "bars",
   },
   "Dionysian aesthetics": {
