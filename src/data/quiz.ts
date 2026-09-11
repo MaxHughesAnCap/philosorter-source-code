@@ -11,12 +11,14 @@ export interface QuizNode {
 
 export const quiz: Record<string, QuizNode> = {
   root: {
-    question: "Which question keeps you up at night?",
+    question: "What branch of philosophy are you interested in?",
     options: [
-      { label: "What is ultimately real?", to: "q:m1" },
-      { label: "What can we actually know?", to: "q:k1" },
-      { label: "How should I live?", to: "q:e1" },
-      { label: "What makes authority legitimate?", to: "q:p1" },
+      { label: "Metaphysics", to: "q:m1" },
+      { label: "Theology", to: "q:t1" },
+      { label: "Epistemology", to: "q:k1" },
+      { label: "Ethics", to: "q:e1" },
+      { label: "Politics", to: "q:p1" },
+      { label: "Aesthetics", to: "q:a1" },
     ],
   },
 
@@ -102,6 +104,13 @@ export const quiz: Record<string, QuizNode> = {
     question: "Is everything, mind included, made of matter?",
     options: [
       { label: "Yes", to: "q:m12" },
+      { label: "No", to: "q:m11b" },
+    ],
+  },
+  m11b: {
+    question: "Is experience a basic feature of matter itself, present all the way down?",
+    options: [
+      { label: "Yes", to: "r:Panpsychism" },
       { label: "No — thinking is a separate substance", to: "r:Cartesian dualism" },
     ],
   },
@@ -109,7 +118,14 @@ export const quiz: Record<string, QuizNode> = {
     question: "Are colour, meaning and value only conventions laid over particles in the void?",
     options: [
       { label: "Yes", to: "r:Atomism" },
-      { label: "No — matter organised gives rise to the rest", to: "r:Materialism" },
+      { label: "No — matter organised gives rise to the rest", to: "q:m12b" },
+    ],
+  },
+  m12b: {
+    question: "Will beliefs and desires survive a mature science of the brain?",
+    options: [
+      { label: "No — they will be replaced, not explained", to: "r:Eliminative materialism" },
+      { label: "Yes — they are real features of physical minds", to: "r:Materialism" },
     ],
   },
   m13: {
@@ -117,6 +133,162 @@ export const quiz: Record<string, QuizNode> = {
     options: [
       { label: "Yes, reality is process", to: "r:Process philosophy" },
       { label: "Things exist, but only in dependence on conditions", to: "r:Madhyamaka Buddhism" },
+    ],
+  },
+
+  // ── Theology ────────────────────────────────────────────────
+  t1: {
+    question: "Is there a divine reality at all?",
+    options: [
+      { label: "Yes", to: "q:t2" },
+      { label: "No, or we cannot tell", to: "q:t20" },
+    ],
+  },
+  t2: {
+    question: "Is the divine personal — something that knows and wills?",
+    options: [
+      { label: "Yes", to: "q:t3" },
+      { label: "No — it is impersonal", to: "q:t10" },
+    ],
+  },
+  t3: {
+    question: "Does God stand apart from the world as its creator?",
+    options: [
+      { label: "Yes", to: "q:t4" },
+      { label: "No — the divine is within the world", to: "q:t8" },
+    ],
+  },
+  t4: {
+    question: "Does God still act in history, through revelation and providence?",
+    options: [
+      { label: "Yes", to: "q:t4b" },
+      { label: "No — he set the laws and withdrew", to: "r:Deism" },
+    ],
+  },
+  t4b: {
+    question: "Is every event caused directly by God at each instant, with nature only his habit?",
+    options: [
+      { label: "Yes", to: "r:Occasionalism" },
+      { label: "No — created things have real causal powers", to: "q:t5" },
+    ],
+  },
+  t5: {
+    question: "Can faith and reason be joined into one order?",
+    options: [
+      { label: "Yes", to: "q:t6" },
+      { label: "No — it takes a leap", to: "r:Fideism" },
+    ],
+  },
+  t6: {
+    question: "Is that order legible in nature, as law written into what we are for?",
+    options: [
+      { label: "Yes", to: "r:Thomism" },
+      { label: "No", to: "q:t7" },
+    ],
+  },
+  t7: {
+    question: "Is the will so wounded that only unearned grace can heal it?",
+    options: [
+      { label: "Yes", to: "q:t7b" },
+      { label: "No", to: "q:t7c" },
+    ],
+  },
+  t7b: {
+    question: "Is God's sovereignty absolute, election included?",
+    options: [
+      { label: "Yes", to: "r:Reformed theology" },
+      { label: "No — grace works on a restless heart", to: "r:Augustinianism" },
+    ],
+  },
+  t7c: {
+    question: "Is the good simply whatever God commands?",
+    options: [
+      { label: "Yes", to: "r:Divine command theory" },
+      { label: "No", to: "q:t7d" },
+    ],
+  },
+  t7d: {
+    question: "Is the future of free creatures genuinely open, even to God?",
+    options: [
+      { label: "Yes — love cannot be scripted", to: "r:Open theism" },
+      { label: "No — he is eternal and unchanging", to: "r:Classical theism" },
+    ],
+  },
+  t8: {
+    question: "Does the world exist within God without exhausting him?",
+    options: [
+      { label: "Yes", to: "r:Panentheism" },
+      { label: "No", to: "q:t9" },
+    ],
+  },
+  t9: {
+    question: "Does God change along with the world, persuading rather than compelling?",
+    options: [
+      { label: "Yes", to: "r:Process theology" },
+      { label: "No", to: "q:t9b" },
+    ],
+  },
+  t9b: {
+    question: "Is the path union with the Beloved through love, poetry and remembrance?",
+    options: [
+      { label: "Yes", to: "r:Sufism" },
+      { label: "No — nature simply is the divine", to: "r:Pantheism" },
+    ],
+  },
+  t10: {
+    question: "Is your own self ultimately identical with that ultimate reality?",
+    options: [
+      { label: "Yes", to: "r:Advaita Vedanta" },
+      { label: "No", to: "q:t11" },
+    ],
+  },
+  t11: {
+    question: "Is the soul eternally distinct and dependent, saved through devotion?",
+    options: [
+      { label: "Yes", to: "r:Dvaita Vedanta" },
+      { label: "No", to: "q:t12" },
+    ],
+  },
+  t12: {
+    question: "Can the ultimate be described at all?",
+    options: [
+      { label: "No", to: "q:t12b" },
+      { label: "Yes, in some way", to: "q:t13" },
+    ],
+  },
+  t12b: {
+    question: "Is the way negation and silence, or sitting past doctrine altogether?",
+    options: [
+      { label: "Negation and silence", to: "r:Apophatic mysticism" },
+      { label: "Just sit and see directly", to: "r:Zen Buddhism" },
+    ],
+  },
+  t13: {
+    question: "Does everything emanate from a source we can climb back toward?",
+    options: [
+      { label: "Yes", to: "r:Neoplatonism" },
+      { label: "No", to: "q:t14" },
+    ],
+  },
+  t14: {
+    question: "Is reality a flow to yield to, or infinitely many-sided?",
+    options: [
+      { label: "A flow to yield to", to: "r:Taoism" },
+      { label: "Many-sided — so harm no one and claim nothing absolutely", to: "r:Jainism" },
+    ],
+  },
+  t20: {
+    question: "Is the honest position suspension of judgement?",
+    options: [
+      { label: "Yes", to: "r:Agnosticism" },
+      { label: "No — there is no God", to: "q:t21" },
+    ],
+  },
+  t21: {
+    question: "Do awe, ritual and reverence still belong in a godless cosmos?",
+    options: [
+      { label: "Yes", to: "r:Religious naturalism" },
+      { label: "No — nature explains itself and that is enough", to: "r:Atheistic naturalism" },
     ],
   },
 
@@ -154,7 +326,21 @@ export const quiz: Record<string, QuizNode> = {
     question: "Is a belief true because it works when you act on it?",
     options: [
       { label: "Yes", to: "r:Pragmatism" },
-      { label: "No — it is true by matching experience", to: "r:Empiricism" },
+      { label: "No", to: "q:k5b" },
+    ],
+  },
+  k5b: {
+    question: "Must knowledge rest on secure foundations in experience?",
+    options: [
+      { label: "Yes", to: "r:Empiricism" },
+      { label: "No — nothing is self-justifying", to: "q:k5c" },
+    ],
+  },
+  k5c: {
+    question: "What makes a belief warranted, then?",
+    options: [
+      { label: "Fitting the whole web of what I believe", to: "r:Coherentism" },
+      { label: "Coming from a process that tends to get things right", to: "r:Reliabilism" },
     ],
   },
   k6: {
@@ -205,15 +391,22 @@ export const quiz: Record<string, QuizNode> = {
     question: "Is there a given moral order you ought to conform to?",
     options: [
       { label: "Yes", to: "q:e2" },
-      { label: "Yes, and it is sacred", to: "q:e15" },
-      { label: "No — values must be created", to: "q:e10" },
+      { label: "Yes, and it is sacred", to: "q:t5" },
+      { label: "No — values must be created", to: "q:e9" },
     ],
   },
   e2: {
     question: "Does morality come down to outcomes — how much good is produced?",
     options: [
-      { label: "Yes", to: "r:Utilitarianism" },
+      { label: "Yes", to: "q:e2b" },
       { label: "No", to: "q:e3" },
+    ],
+  },
+  e2b: {
+    question: "Should you follow the evidence to wherever you can do the most good, impartially?",
+    options: [
+      { label: "Yes, rigorously", to: "r:Effective altruism" },
+      { label: "No — the principle is enough", to: "r:Utilitarianism" },
     ],
   },
   e3: {
@@ -254,8 +447,15 @@ export const quiz: Record<string, QuizNode> = {
   e8: {
     question: "Do moral demands arise from concrete relationships and dependence?",
     options: [
-      { label: "Yes", to: "r:Care ethics" },
+      { label: "Yes", to: "q:e8a" },
       { label: "No", to: "q:e8b" },
+    ],
+  },
+  e8a: {
+    question: "Is personhood itself something achieved through community?",
+    options: [
+      { label: "Yes — I am because we are", to: "r:Ubuntu ethics" },
+      { label: "No — but care and attention come first", to: "r:Care ethics" },
     ],
   },
   e8b: {
@@ -263,6 +463,20 @@ export const quiz: Record<string, QuizNode> = {
     options: [
       { label: "Yes", to: "r:Cynicism" },
       { label: "No — trust nature, but inwardly", to: "r:Transcendentalism" },
+    ],
+  },
+  e9: {
+    question: "Do moral rules still bind because rational people would agree to them?",
+    options: [
+      { label: "Yes — morality is a bargain worth keeping", to: "r:Contractarianism" },
+      { label: "No", to: "q:e9b" },
+    ],
+  },
+  e9b: {
+    question: "Are moral codes simply the products of particular cultures?",
+    options: [
+      { label: "Yes — custom is king", to: "r:Moral relativism" },
+      { label: "No", to: "q:e10" },
     ],
   },
   e10: {
@@ -293,22 +507,8 @@ export const quiz: Record<string, QuizNode> = {
       { label: "No — I am my choices and answerable for them", to: "r:Existentialism" },
     ],
   },
-  e15: {
-    question: "Can faith and reason be joined into one order?",
-    options: [
-      { label: "Yes", to: "q:e16" },
-      { label: "No — it takes a leap", to: "r:Fideism" },
-    ],
-  },
-  e16: {
-    question: "Is that order legible in nature, as law written into what we are for?",
-    options: [
-      { label: "Yes", to: "r:Thomism" },
-      { label: "No — the will must be healed before the mind sees", to: "r:Augustinianism" },
-    ],
-  },
 
-  // ── Political philosophy ────────────────────────────────────
+  // ── Politics ────────────────────────────────────────────────
   p1: {
     question: "Can a state ever be legitimate?",
     options: [
@@ -349,6 +549,13 @@ export const quiz: Record<string, QuizNode> = {
     question: "Are rules just only when every inequality helps the worst off?",
     options: [
       { label: "Yes", to: "r:Rawlsian liberalism" },
+      { label: "No", to: "q:p6b" },
+    ],
+  },
+  p6b: {
+    question: "Can capitalism be tamed by unions and universal services rather than abolished?",
+    options: [
+      { label: "Yes, by steady democratic reform", to: "r:Social democracy" },
       { label: "No", to: "q:p7" },
     ],
   },
@@ -363,7 +570,14 @@ export const quiz: Record<string, QuizNode> = {
     question: "Is inherited tradition wiser than any reformer's blueprint?",
     options: [
       { label: "Yes", to: "q:p9" },
-      { label: "No, but the unencumbered individual is a fiction", to: "r:Communitarianism" },
+      { label: "No, but the unencumbered individual is a fiction", to: "q:p8b" },
+    ],
+  },
+  p8b: {
+    question: "Should property be spread as widely as possible, with decisions kept local?",
+    options: [
+      { label: "Yes — many small owners", to: "r:Distributism" },
+      { label: "No — the shared life comes first", to: "r:Communitarianism" },
     ],
   },
   p9: {
@@ -377,14 +591,94 @@ export const quiz: Record<string, QuizNode> = {
     question: "Is private property in land and capital legitimate?",
     options: [
       { label: "Yes", to: "q:p11" },
-      { label: "Only possession through use", to: "r:Mutualism" },
+      { label: "Only possession through use", to: "q:p10b" },
+    ],
+  },
+  p10b: {
+    question: "Should industry be run by federated unions and won by the general strike?",
+    options: [
+      { label: "Yes", to: "r:Syndicalism" },
+      { label: "No — free exchange between independent producers", to: "r:Mutualism" },
     ],
   },
   p11: {
     question: "Is democracy itself the deeper problem?",
     options: [
       { label: "Yes — covenant communities instead", to: "r:Hoppeanism" },
-      { label: "No — just abolish the coercive monopoly", to: "r:Rothbardianism" },
+      { label: "No — just abolish the coercive monopoly", to: "q:p11b" },
+    ],
+  },
+  p11b: {
+    question: "How does that come about?",
+    options: [
+      { label: "By argument, principle and legal theory", to: "r:Rothbardianism" },
+      { label: "By building markets outside the state until it withers", to: "r:Agorism" },
+    ],
+  },
+
+  // ── Aesthetics ──────────────────────────────────────────────
+  a1: {
+    question: "Where does beauty live?",
+    options: [
+      { label: "In the object itself", to: "q:a2" },
+      { label: "In how we respond to it", to: "q:a5" },
+      { label: "In the society that makes and judges art", to: "q:a8" },
+    ],
+  },
+  a2: {
+    question: "Does beauty consist in order, proportion and restraint?",
+    options: [
+      { label: "Yes", to: "r:Classicism" },
+      { label: "No", to: "q:a3" },
+    ],
+  },
+  a3: {
+    question: "Is it arrangement alone — line, colour, structure — that makes a work art?",
+    options: [
+      { label: "Yes, subject matter is irrelevant", to: "r:Formalism" },
+      { label: "No", to: "q:a4" },
+    ],
+  },
+  a4: {
+    question: "Is the deepest beauty found in the weathered, asymmetric and impermanent?",
+    options: [
+      { label: "Yes", to: "r:Wabi-sabi" },
+      { label: "No — it should overwhelm and exalt", to: "r:Romanticism" },
+    ],
+  },
+  a5: {
+    question: "Is calling something beautiful a disinterested pleasure you expect others to share?",
+    options: [
+      { label: "Yes", to: "r:Kantian aesthetics" },
+      { label: "No", to: "q:a6" },
+    ],
+  },
+  a6: {
+    question: "Does a work succeed by transmitting the feeling the artist actually had?",
+    options: [
+      { label: "Yes", to: "r:Expressivism" },
+      { label: "No", to: "q:a7" },
+    ],
+  },
+  a7: {
+    question: "Does art justify existence by affirming life in all its excess?",
+    options: [
+      { label: "Yes", to: "r:Dionysian aesthetics" },
+      { label: "No", to: "q:a7b" },
+    ],
+  },
+  a7b: {
+    question: "Does art owe anything to morality or instruction?",
+    options: [
+      { label: "Nothing at all — art for art's sake", to: "r:Aestheticism" },
+      { label: "Yes — it answers to the world it comes from", to: "r:Marxist aesthetics" },
+    ],
+  },
+  a8: {
+    question: "Is a work art simply because the artworld treats it as such?",
+    options: [
+      { label: "Yes", to: "r:Institutional theory of art" },
+      { label: "No — art carries the politics of its conditions", to: "r:Marxist aesthetics" },
     ],
   },
 };
