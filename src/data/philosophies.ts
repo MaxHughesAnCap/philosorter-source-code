@@ -530,6 +530,369 @@ export const philosophies: Record<string, School> = {
     colors: ["#1a1414", "#c9a227", "#6d2020"],
     pattern: "spiral",
   },
+
+  // ── Theology ────────────────────────────────────────────────
+  "Classical theism": {
+    quote: "That than which nothing greater can be conceived.",
+    thinker: "Anselm of Canterbury",
+    blurb:
+      "One God, simple, eternal and unchanging, is the source of everything else. Reason can reach him; revelation completes what reason begins.",
+    tradition: "Theism",
+    colors: ["#1b2a4a", "#e9dfc3", "#c9a227"],
+    pattern: "cross",
+  },
+  Panentheism: {
+    quote: "The world is in God, and God is more than the world.",
+    thinker: "Karl Krause",
+    blurb:
+      "The universe lives inside the divine without exhausting it. God is neither a distant maker nor merely the sum of things, but the whole in which things happen.",
+    tradition: "Theism",
+    colors: ["#123a35", "#cfe3d2", "#c9a227"],
+    pattern: "orb",
+  },
+  Pantheism: {
+    quote: "God is not somewhere behind nature; nature is the face of God.",
+    thinker: "Giordano Bruno",
+    blurb:
+      "Divinity is not separate from the cosmos — it simply is the cosmos, infinite and alive. Worship becomes attention to what already surrounds you.",
+    tradition: "Theism",
+    colors: ["#0d2f2a", "#8fd0b0", "#e6dfc8"],
+    pattern: "spiral",
+  },
+  Deism: {
+    quote: "The creation we behold is the true and only word of God.",
+    thinker: "Thomas Paine",
+    blurb:
+      "A rational maker set the world running with fixed laws and no further meddling. Reverence stays; miracles and priesthoods go.",
+    tradition: "Enlightenment religion",
+    colors: ["#20304d", "#e8e2d0", "#b98b3a"],
+    pattern: "quarter",
+  },
+  "Process theology": {
+    quote: "God is the fellow sufferer who understands.",
+    thinker: "Alfred North Whitehead",
+    blurb:
+      "God is not an unmoved ruler but a persuasive presence changing with the world, luring creation forward rather than coercing it.",
+    tradition: "Process thought",
+    colors: ["#2b3f6b", "#d8c7a0", "#7fa6c9"],
+    pattern: "spiral",
+  },
+  "Apophatic mysticism": {
+    quote: "Of the Divine, nothing can be said that is true.",
+    thinker: "Pseudo-Dionysius",
+    blurb:
+      "Every name for God falls short, so the way forward is denial: strip away images until only silence and darkness remain, and meet him there.",
+    tradition: "Mysticism",
+    colors: ["#0c0c14", "#c8c2b0", "#5b4f8a"],
+    pattern: "orb",
+  },
+  Sufism: {
+    quote: "You are not a drop in the ocean; you are the ocean in a drop.",
+    thinker: "Rumi",
+    blurb:
+      "Beyond law and doctrine lies the annihilation of the self in divine love. Practice — poetry, remembrance, discipline — polishes the heart until it reflects the One.",
+    tradition: "Islamic mysticism",
+    colors: ["#123a5a", "#e5c86a", "#0e8a7d"],
+    pattern: "spiral",
+  },
+  Occasionalism: {
+    quote: "There is no cause but God; fire does not burn, God burns at the fire.",
+    thinker: "Al-Ghazali",
+    blurb:
+      "Nothing in nature has causal power of its own. What we call laws are God's habits, renewed at every instant.",
+    tradition: "Islamic theology",
+    colors: ["#0f2b3d", "#e0d5b8", "#b8552f"],
+    pattern: "bars",
+  },
+  "Reformed theology": {
+    quote: "The human heart is a perpetual factory of idols.",
+    thinker: "John Calvin",
+    blurb:
+      "God is absolutely sovereign and grace is unearned. Salvation is his initiative from first to last, and the world is a theatre of his glory.",
+    tradition: "Christian theology",
+    colors: ["#161b21", "#dfe0d9", "#7a1f2c"],
+    pattern: "cross",
+  },
+  "Open theism": {
+    quote: "Love that cannot be refused is not love.",
+    thinker: "Clark Pinnock",
+    blurb:
+      "God knows all that can be known, but the future of free creatures is genuinely open. History is a real relationship, not a script.",
+    tradition: "Christian theology",
+    colors: ["#274a6d", "#f0e7cf", "#6fae9f"],
+    pattern: "quarter",
+  },
+  "Dvaita Vedanta": {
+    quote: "The soul is eternally distinct from and dependent on the Lord.",
+    thinker: "Madhva",
+    blurb:
+      "The self is never identical with God. Liberation is loving devotion within an unbridgeable difference, not dissolution into unity.",
+    tradition: "Vedanta",
+    colors: ["#3a1f4a", "#f0dca8", "#c96a2a"],
+    pattern: "eye",
+  },
+  Jainism: {
+    quote: "Reality has infinite aspects; no single view captures it.",
+    thinker: "Mahavira",
+    blurb:
+      "Every claim is true only from a standpoint, so dogmatism is a kind of violence. Radical non-harm and self-discipline free the soul from accumulated karma.",
+    tradition: "Indian philosophy",
+    colors: ["#f4efe0", "#2d6a4f", "#d4a017"],
+    pattern: "orb",
+  },
+  "Zen Buddhism": {
+    quote: "If you meet the Buddha on the road, kill him.",
+    thinker: "Linji",
+    blurb:
+      "Doctrine and argument cannot deliver awakening. Sitting, working and seeing directly into this moment can, and there is nothing else to attain.",
+    tradition: "Buddhism",
+    colors: ["#1c1c1c", "#efe9dc", "#8a7a5c"],
+    pattern: "orb",
+  },
+  "Religious naturalism": {
+    quote: "The universe is not only stranger than we suppose; it is holy enough.",
+    thinker: "Ursula Goodenough",
+    blurb:
+      "No supernatural anything, yet awe, ritual and reverence remain fitting responses to a cosmos that produced us.",
+    tradition: "Naturalism",
+    colors: ["#1f3a2c", "#dce8cf", "#c08a3e"],
+    pattern: "bend",
+  },
+  Agnosticism: {
+    quote: "Do not pretend that conclusions are certain which are not demonstrated.",
+    thinker: "T. H. Huxley",
+    blurb:
+      "The honest position on ultimate questions is suspended judgement. Belief and disbelief both claim more than the evidence permits.",
+    tradition: "Scepticism",
+    colors: ["#3a4046", "#dfe3e6", "#93a2ad"],
+    pattern: "bars",
+  },
+  "Atheistic naturalism": {
+    quote: "I had no need of that hypothesis.",
+    thinker: "Pierre-Simon Laplace",
+    blurb:
+      "The natural order explains itself. Meaning, morality and wonder are human achievements inside a universe with no author.",
+    tradition: "Naturalism",
+    colors: ["#12141a", "#c8ccd2", "#4a7fb5"],
+    pattern: "quarter",
+  },
+
+  // ── Aesthetics ──────────────────────────────────────────────
+  Classicism: {
+    quote: "A noble simplicity and a quiet grandeur.",
+    thinker: "J. J. Winckelmann",
+    blurb:
+      "Beauty is order, proportion and restraint. The artist works within inherited rules because the rules encode what excellence actually looks like.",
+    tradition: "Aesthetics",
+    colors: ["#efe8d8", "#4a6273", "#c4a457"],
+    pattern: "bars",
+  },
+  Romanticism: {
+    quote: "Poetry is the spontaneous overflow of powerful feelings.",
+    thinker: "William Wordsworth",
+    blurb:
+      "Art begins in feeling, nature and the infinite longing of the individual. The sublime matters more than the polished, genius more than the rule.",
+    tradition: "Aesthetics",
+    colors: ["#22304a", "#d9a441", "#8fb0c9"],
+    pattern: "bend",
+  },
+  "Kantian aesthetics": {
+    quote: "Beauty is purposiveness without purpose.",
+    thinker: "Immanuel Kant",
+    blurb:
+      "Judging something beautiful is a disinterested pleasure we expect others to share. Taste is neither mere preference nor a matter of proof.",
+    tradition: "Aesthetics",
+    colors: ["#2c3550", "#e8e3d4", "#9c8bbd"],
+    pattern: "quarter",
+  },
+  Aestheticism: {
+    quote: "All art is quite useless.",
+    thinker: "Oscar Wilde",
+    blurb:
+      "Art owes nothing to morality, politics or instruction. Its justification is the intensity of the experience it gives — art for art's sake.",
+    tradition: "Aesthetics",
+    colors: ["#1d1526", "#e0c36a", "#a4577c"],
+    pattern: "eye",
+  },
+  Formalism: {
+    quote: "Significant form is the one quality common to all works of visual art.",
+    thinker: "Clive Bell",
+    blurb:
+      "What makes a work art is its arrangement of line, colour and structure — not its subject, story or the artist's biography.",
+    tradition: "Aesthetics",
+    colors: ["#f1f0eb", "#1f1f24", "#d0483c"],
+    pattern: "bars",
+  },
+  Expressivism: {
+    quote: "Art is the transmission of feeling the artist has experienced.",
+    thinker: "Leo Tolstoy",
+    blurb:
+      "A work succeeds when it infects the audience with the emotion behind it. Sincerity, not technique or novelty, is the measure.",
+    tradition: "Aesthetics",
+    colors: ["#5a1d24", "#f0d9a8", "#2b5f6b"],
+    pattern: "bend",
+  },
+  "Institutional theory of art": {
+    quote: "A work of art is an artefact conferred the status of candidate for appreciation.",
+    thinker: "George Dickie",
+    blurb:
+      "There is no hidden essence of art. Something is art because the artworld — galleries, critics, practices — treats it as such.",
+    tradition: "Aesthetics",
+    colors: ["#2a2a2e", "#e6e6e2", "#7f8fa6"],
+    pattern: "quarter",
+  },
+  "Marxist aesthetics": {
+    quote: "There is no document of civilisation which is not also a document of barbarism.",
+    thinker: "Walter Benjamin",
+    blurb:
+      "Art is made inside material conditions and carries their politics. Criticism exposes what a work does socially, and demands that it do better.",
+    tradition: "Aesthetics",
+    colors: ["#6b1a1a", "#e6d8b8", "#2b2b2b"],
+    pattern: "bars",
+  },
+  "Dionysian aesthetics": {
+    quote: "Only as an aesthetic phenomenon is existence eternally justified.",
+    thinker: "Friedrich Nietzsche",
+    blurb:
+      "Great art fuses form-giving clarity with intoxicated excess. It does not console us about life; it makes life bearable by affirming it whole.",
+    tradition: "Aesthetics",
+    colors: ["#1a0f14", "#c2452d", "#e8c98a"],
+    pattern: "spiral",
+  },
+  "Wabi-sabi": {
+    quote: "Nothing lasts, nothing is finished, nothing is perfect.",
+    thinker: "Sen no Rikyū",
+    blurb:
+      "Beauty lives in the weathered, asymmetric and incomplete. The crack in the bowl is where its history and its worth show through.",
+    tradition: "Japanese aesthetics",
+    colors: ["#3b332a", "#d8cdb8", "#7d8a6a"],
+    pattern: "orb",
+  },
+
+  // ── Further metaphysics ─────────────────────────────────────
+  Panpsychism: {
+    quote: "Experience goes all the way down.",
+    thinker: "Galen Strawson",
+    blurb:
+      "Consciousness is not a late accident but a basic feature of matter. Complex minds are combinations of something already mind-like.",
+    tradition: "Philosophy of mind",
+    colors: ["#1d2b4a", "#8fd6d0", "#e4dcc2"],
+    pattern: "orb",
+  },
+  "Eliminative materialism": {
+    quote: "Beliefs and desires may go the way of phlogiston.",
+    thinker: "Paul Churchland",
+    blurb:
+      "Our everyday psychology is a bad theory. A mature neuroscience will not explain beliefs and desires — it will replace them.",
+    tradition: "Philosophy of mind",
+    colors: ["#14161c", "#cfd6dd", "#3f8f8a"],
+    pattern: "bars",
+  },
+
+  // ── Further epistemology ────────────────────────────────────
+  Coherentism: {
+    quote: "Beliefs face the tribunal of experience only as a corporate body.",
+    thinker: "W. V. O. Quine",
+    blurb:
+      "Nothing is self-justifying. A belief is warranted by how well it hangs together with everything else you hold, and the whole web can be revised.",
+    tradition: "Epistemology",
+    colors: ["#20303a", "#dfe6e2", "#c0a15a"],
+    pattern: "bend",
+  },
+  Reliabilism: {
+    quote: "Knowledge is belief produced by a process that tends to get things right.",
+    thinker: "Alvin Goldman",
+    blurb:
+      "You need not be able to justify yourself in argument. What matters is that the process forming the belief is dependable.",
+    tradition: "Epistemology",
+    colors: ["#2a3b2c", "#e2e8d8", "#8fa87c"],
+    pattern: "quarter",
+  },
+
+  // ── Further ethics ──────────────────────────────────────────
+  "Divine command theory": {
+    quote: "The good is what God commands.",
+    thinker: "William of Ockham",
+    blurb:
+      "Moral obligation is grounded in the will of God rather than in consequences, contracts or human flourishing alone.",
+    tradition: "Religious ethics",
+    colors: ["#1a2440", "#f0e8d0", "#b8933a"],
+    pattern: "cross",
+  },
+  "Moral relativism": {
+    quote: "Custom is king of all.",
+    thinker: "Herodotus",
+    blurb:
+      "Moral codes are products of cultures and histories. There is no view from nowhere from which to rank them.",
+    tradition: "Metaethics",
+    colors: ["#38323f", "#e5dfd4", "#a97fa0"],
+    pattern: "quarter",
+  },
+  Contractarianism: {
+    quote: "Morality is the set of rules rational people would agree to.",
+    thinker: "David Gauthier",
+    blurb:
+      "Ethics needs no cosmic backing. It is the mutually advantageous bargain self-interested agents would strike and then keep.",
+    tradition: "Metaethics",
+    colors: ["#1f3550", "#e3e7ea", "#c2a25c"],
+    pattern: "bars",
+  },
+  "Effective altruism": {
+    quote: "If it is in our power to prevent something bad, without sacrificing anything comparable, we ought to.",
+    thinker: "Peter Singer",
+    blurb:
+      "Take the impartial demand seriously and follow the evidence: do the most good you can with what you have, whoever the beneficiaries are.",
+    tradition: "Applied ethics",
+    colors: ["#123d52", "#dff0f0", "#4fb3a1"],
+    pattern: "orb",
+  },
+  "Ubuntu ethics": {
+    quote: "A person is a person through other persons.",
+    thinker: "Desmond Tutu",
+    blurb:
+      "Personhood is achieved in community. The moral task is to build and repair the relationships that make everyone more fully human.",
+    tradition: "African philosophy",
+    colors: ["#5a2f14", "#f0d9a0", "#2f6b4f"],
+    pattern: "spiral",
+  },
+
+  // ── Further political philosophy ────────────────────────────
+  Distributism: {
+    quote: "Too much capitalism means too few capitalists.",
+    thinker: "G. K. Chesterton",
+    blurb:
+      "Neither big state nor big business: property should be spread as widely as possible, with decisions made at the smallest workable scale.",
+    tradition: "Political philosophy",
+    colors: ["#3d4a2a", "#f0e6cc", "#8a5a2a"],
+    pattern: "quarter",
+  },
+  Agorism: {
+    quote: "Counter-economics is the practice of the free market where it is forbidden.",
+    thinker: "Samuel Konkin III",
+    blurb:
+      "Freedom is not won at the ballot box but by building black and grey markets until the state becomes irrelevant.",
+    tradition: "Libertarianism",
+    colors: ["#101418", "#d8d2c0", "#c9a227"],
+    pattern: "bend",
+  },
+  "Social democracy": {
+    quote: "Markets where possible, the state where necessary.",
+    thinker: "Eduard Bernstein",
+    blurb:
+      "Capitalism can be tamed rather than abolished: strong unions, universal services and steady reform through democratic institutions.",
+    tradition: "Political philosophy",
+    colors: ["#8a1f2c", "#f2e7d8", "#d8a13a"],
+    pattern: "bars",
+  },
+  Syndicalism: {
+    quote: "The workshop will replace the parliament.",
+    thinker: "Georges Sorel",
+    blurb:
+      "Power belongs in federated unions running industry directly. The general strike, not the election, is the lever of change.",
+    tradition: "Anarchism",
+    colors: ["#1c1c1c", "#d02f2f", "#e6dfc8"],
+    pattern: "bend",
+  },
 };
 
 export const philosophyNames = Object.keys(philosophies).sort((a, b) => a.localeCompare(b));
