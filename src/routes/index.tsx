@@ -11,13 +11,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "A branching flowchart quiz that sorts you into one of 57 philosophical schools, from Platonism and Stoicism to Objectivism and Hoppeanism.",
+          "A branching flowchart quiz that sorts you into one of over 100 philosophical schools, from Platonism and Stoicism to Objectivism and Hoppeanism.",
       },
       { property: "og:title", content: "PhiloSorter — find your philosophy" },
       {
         property: "og:description",
         content:
-          "Answer a handful of branching questions and land on one of 57 schools of philosophy, each with a quote, emblem and summary.",
+          "Answer a handful of branching questions and land on one of over 100 schools of philosophy, each with a quote, emblem and summary.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
