@@ -6,13 +6,13 @@ import { getSchool, philosophyNames } from "@/data/philosophies";
 export const Route = createFileRoute("/schools")({
   head: () => ({
     meta: [
-      { title: "All 57 schools of philosophy — PhiloSorter" },
+      { title: "Every school of philosophy — PhiloSorter" },
       {
         name: "description",
         content:
-          "Browse every result in PhiloSorter: 57 philosophical schools with a defining quote, thinker and summary, from Platonism to Hoppeanism.",
+          "Browse every result in PhiloSorter: over 100 philosophical schools with a defining quote, thinker and summary, from Platonism to Hoppeanism.",
       },
-      { property: "og:title", content: "All 57 schools — PhiloSorter" },
+      { property: "og:title", content: "Every school — PhiloSorter" },
       {
         property: "og:description",
         content: "Every philosophical school in the flowchart, with quotes, thinkers and summaries.",

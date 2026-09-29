@@ -388,123 +388,53 @@ export const quiz: Record<string, QuizNode> = {
 
   // ── Ethics ──────────────────────────────────────────────────
   e1: {
-    question: "Is there a given moral order you ought to conform to?",
+    question: "Are ethics objective?",
     options: [
-      { label: "Yes", to: "q:e2" },
-      { label: "Yes, and it is sacred", to: "q:t5" },
-      { label: "No — values must be created", to: "q:e9" },
+      { label: "Objective", to: "q:eo1" },
+      { label: "Subjective", to: "q:es1" },
     ],
   },
-  e2: {
-    question: "Does morality come down to outcomes — how much good is produced?",
+  eo1: {
+    question: "What grounds objective ethics?",
     options: [
-      { label: "Yes", to: "q:e2b" },
-      { label: "No", to: "q:e3" },
+      { label: "Reason / principles", to: "q:eo2" },
+      { label: "The consequences of actions", to: "q:eo3" },
+      { label: "Rational self-interest", to: "r:Rational egoism" },
+      { label: "Agreement / contract", to: "r:Contractarianism" },
+      { label: "The process of argumentation", to: "r:Argumentation ethics" },
+      { label: "Their existence in nature", to: "r:Ethical naturalism" },
+      { label: "God / divine command", to: "r:Divine command theory" },
     ],
   },
-  e2b: {
-    question: "Should you follow the evidence to wherever you can do the most good, impartially?",
+  eo2: {
+    question: "Ought a person sacrifice themselves for others?",
     options: [
-      { label: "Yes, rigorously", to: "r:Effective altruism" },
-      { label: "No — the principle is enough", to: "r:Utilitarianism" },
+      { label: "Yes", to: "r:Altruism" },
+      { label: "Sometimes / no", to: "r:Kantian deontology" },
     ],
   },
-  e3: {
-    question: "Does it come down to duties that bind whatever the consequences?",
+  eo3: {
+    question: "Are those consequences measured by happiness and wellbeing?",
     options: [
-      { label: "Yes", to: "r:Kantian deontology" },
-      { label: "No", to: "q:e4" },
+      { label: "Yes", to: "r:Utilitarianism" },
+      { label: "No", to: "r:Consequentialism" },
     ],
   },
-  e4: {
-    question: "Is the point to become a certain kind of person rather than to follow rules?",
+  es1: {
+    question: "Where do ethics come from?",
     options: [
-      { label: "Yes", to: "q:e5" },
-      { label: "No", to: "q:e8" },
+      { label: "Custom of different cultures", to: "r:Moral relativism" },
+      { label: "Emotions", to: "r:Emotivism" },
+      { label: "They are arbitrary", to: "r:Subjectivism" },
+      { label: "Ethics are a \"spook\" — live by your ego", to: "r:Egoism (Stirnerite)" },
+      { label: "They don't exist", to: "q:es2" },
     ],
   },
-  e5: {
-    question: "Is character formed above all through family, ritual and social role?",
+  es2: {
+    question: "What is the meaning of life?",
     options: [
-      { label: "Yes", to: "r:Confucianism" },
-      { label: "No", to: "q:e6" },
-    ],
-  },
-  e6: {
-    question: "Should you accept whatever is outside your control and hold virtue as the only good?",
-    options: [
-      { label: "Yes", to: "r:Stoicism" },
-      { label: "No", to: "q:e7" },
-    ],
-  },
-  e7: {
-    question: "Is a quiet life of modest pleasure among friends the highest aim?",
-    options: [
-      { label: "Yes", to: "r:Epicureanism" },
-      { label: "No — excellence is the aim", to: "r:Virtue ethics" },
-    ],
-  },
-  e8: {
-    question: "Do moral demands arise from concrete relationships and dependence?",
-    options: [
-      { label: "Yes", to: "q:e8a" },
-      { label: "No", to: "q:e8b" },
-    ],
-  },
-  e8a: {
-    question: "Is personhood itself something achieved through community?",
-    options: [
-      { label: "Yes — I am because we are", to: "r:Ubuntu ethics" },
-      { label: "No — but care and attention come first", to: "r:Care ethics" },
-    ],
-  },
-  e8b: {
-    question: "Should convention be stripped away by living bare and shameless in accord with nature?",
-    options: [
-      { label: "Yes", to: "r:Cynicism" },
-      { label: "No — trust nature, but inwardly", to: "r:Transcendentalism" },
-    ],
-  },
-  e9: {
-    question: "Do moral rules still bind because rational people would agree to them?",
-    options: [
-      { label: "Yes — morality is a bargain worth keeping", to: "r:Contractarianism" },
-      { label: "No", to: "q:e9b" },
-    ],
-  },
-  e9b: {
-    question: "Are moral codes simply the products of particular cultures?",
-    options: [
-      { label: "Yes — custom is king", to: "r:Moral relativism" },
-      { label: "No", to: "q:e10" },
-    ],
-  },
-  e10: {
-    question: "Once the old values collapse, does anything have value?",
-    options: [
-      { label: "No", to: "r:Nihilism" },
-      { label: "Yes", to: "q:e11" },
-    ],
-  },
-  e11: {
-    question: "Is your own reasoned self-interest the moral purpose of your life?",
-    options: [
-      { label: "Yes", to: "q:e12" },
-      { label: "No", to: "q:e13" },
-    ],
-  },
-  e12: {
-    question: "Is that grounded in an objective reality knowable by reason?",
-    options: [
-      { label: "Yes", to: "r:Objectivism" },
-      { label: "No — every cause above me is a spook", to: "r:Egoism (Stirnerite)" },
-    ],
-  },
-  e13: {
-    question: "Does the world's silence call for revolt rather than despair?",
-    options: [
-      { label: "Yes — live it without appeal", to: "r:Absurdism" },
-      { label: "No — I am my choices and answerable for them", to: "r:Existentialism" },
+      { label: "There is none", to: "r:Nihilism" },
+      { label: "To live free", to: "r:Absurdism" },
     ],
   },
 

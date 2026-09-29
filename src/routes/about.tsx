@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "How PhiloSorter sorts you into one of 57 philosophical schools with a short branching flowchart of questions.",
+          "How PhiloSorter sorts you into one of over 100 philosophical schools with a short branching flowchart of questions.",
       },
       { property: "og:title", content: "About PhiloSorter" },
       {
