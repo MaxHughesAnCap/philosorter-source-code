@@ -893,6 +893,69 @@ export const philosophies: Record<string, School> = {
     colors: ["#1c1c1c", "#d02f2f", "#e6dfc8"],
     pattern: "bend",
   },
+  Altruism: {
+    quote: "Live for others.",
+    thinker: "Auguste Comte",
+    blurb:
+      "Reason shows that the welfare of others makes a real claim on you, and that self-sacrifice for their sake is the height of moral principle.",
+    tradition: "Normative ethics",
+    colors: ["#f4ead6", "#b8413a", "#2f5d7c"],
+    pattern: "cross",
+  },
+  Consequentialism: {
+    quote: "The rightness of an act depends only on the goodness of its consequences.",
+    thinker: "G. E. M. Anscombe (who coined the term)",
+    blurb:
+      "Actions are judged by what they bring about, but the good being maximised need not be happiness: knowledge, beauty, rights respected or perfection may count too.",
+    tradition: "Normative ethics",
+    colors: ["#20324a", "#e3c65a", "#e9e4d6"],
+    pattern: "bars",
+  },
+  Emotivism: {
+    quote: "Stealing money is wrong — says no more than: stealing money, boo!",
+    thinker: "A. J. Ayer",
+    blurb:
+      "Moral statements are not true or false. They express feelings of approval or disapproval and try to stir the same feelings in others.",
+    tradition: "Metaethics",
+    colors: ["#5a1f3d", "#f0b35a", "#efe6d6"],
+    pattern: "eye",
+  },
+  Subjectivism: {
+    quote: "Man is the measure of all things.",
+    thinker: "Protagoras",
+    blurb:
+      "There is no moral fact beyond the individual. Right and wrong are whatever each person holds them to be, with no standpoint that settles disagreements.",
+    tradition: "Metaethics",
+    colors: ["#2d2a26", "#9fb8a0", "#e8dcc2"],
+    pattern: "quarter",
+  },
+  "Rational egoism": {
+    quote: "I swear by my life and my love of it that I will never live for the sake of another man.",
+    thinker: "Ayn Rand",
+    blurb:
+      "Morality is objective, and reason shows that each person's own flourishing is their proper end. Neither sacrificing yourself to others nor others to yourself.",
+    tradition: "Normative ethics",
+    colors: ["#1a1a1a", "#d4af37", "#efe8d8"],
+    pattern: "triangle",
+  },
+  "Argumentation ethics": {
+    quote: "Whoever argues against private property presupposes the very norm he denies.",
+    thinker: "Hans-Hermann Hoppe",
+    blurb:
+      "The act of arguing already assumes each party owns and controls their own body. Any norm that denies self-ownership refutes itself in the act of being argued.",
+    tradition: "Libertarian ethics",
+    colors: ["#11283a", "#e0a82e", "#ece4d2"],
+    pattern: "bend",
+  },
+  "Ethical naturalism": {
+    quote: "Moral facts are facts about what makes creatures like us flourish.",
+    thinker: "Philippa Foot",
+    blurb:
+      "Moral properties are real features of the natural world, discoverable like any other fact about living things and what is good or bad for them.",
+    tradition: "Metaethics",
+    colors: ["#2f4a2a", "#d8c07a", "#ede5d0"],
+    pattern: "orb",
+  },
 };
 
 export const philosophyNames = Object.keys(philosophies).sort((a, b) => a.localeCompare(b));
